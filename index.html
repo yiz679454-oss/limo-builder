@@ -295,7 +295,7 @@ img{display:block;max-width:100%}
  border-top:1px solid rgba(255,255,255,.06);
 }
 .showcase-info-left{display:flex;align-items:center;gap:10px}
-.showcase-info-title{font-size:14px;font-weight:600;color:var(--white)}
+.showcase-info-title{font-size:14px;font-weight:600;color:var(--white);white-space:nowrap}
 .showcase-info-desc{font-size:12.5px;color:var(--gray);max-width:500px;line-height:1.6}
 .showcase-info-badge{
  font-family:'Space Mono',monospace;font-size:10px;letter-spacing:.06em;
@@ -433,9 +433,10 @@ img{display:block;max-width:100%}
 
  <!-- 工作提效对比 -->
  <div style="margin-top:100px">
+  <div class="fade-up" style="border-left:3px solid var(--purple);padding-left:16px;font-size:19px;font-weight:700;color:var(--white);margin-bottom:36px">Skills I Created</div>
   <!-- 审美图片筛选流水线 -->
   <div class="compare-block fade-up">
-   <div class="compare-block-title"><span class="emoji">🎨</span> 用AI筛选审美素材</div>
+   <div class="compare-block-title"> 用AI筛选审美素材</div>
    <div class="compare-row">
     <div class="compare-col before-col">
      <div class="compare-label before">● BEFORE</div>
@@ -453,7 +454,7 @@ img{display:block;max-width:100%}
 
   <!-- 社区热议周报自动化 -->
   <div class="compare-block fade-up">
-   <div class="compare-block-title"><span class="emoji">📝</span> 社区热议周报自动化</div>
+   <div class="compare-block-title"> 社区热议周报自动化</div>
    <div class="compare-row">
     <div class="compare-col before-col">
      <div class="compare-label before">● BEFORE · 手动流程</div>
@@ -619,7 +620,7 @@ var SKILLS = [
  badge: 'Skill · 20+ 安装'
  },
  {
- title: '访谈纪要整理',
+ title: 'Auto-organize Interview Notes',
  desc: '',
  apply: ['Nex Playground 14 份深度访谈纪要', 'Skills 创作者沙龙纪要整理', '用研周报提效（13040字→2640字）'],
  url: 'https://skills.devops.xiaohongshu.com/hub/my-contributions?skill=research-interview-notes',
